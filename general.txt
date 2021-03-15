@@ -1,0 +1,3 @@
+gitkraken =>init=>github =>account => repo =>create
+github => settings => manage access => invite collaborator
+view changes -> stage changes -> commit changes (-> push ανν θελω να φαινονται οι αλλαγές στο Github)
