@@ -1,33 +1,35 @@
 n = 3
-L1 = [
+A = [
     [],
     [3,1,2]
 ]
 for i in range(n):
-    L1[0].append(i+1)
-print(L1)
-L2=[
+    A[0].append(i+1)
+print(A)
+B=[
     [],
     [2,3,1]
 ]
 for i in range(n):
-    L2[0].append(i+1)
-print(L2)
-L3=[     # L3 = L1 o L2 = id
+    B[0].append(i+1)
+print(B)
+# X = A o B = id
+X=[
     [],
     []
 ]
 for i in range(n):
-    L3[0].append(i+1)
-    j=L1[1][i]
-    L3[1].append(L2[1][j-1])
-print(L3)
-L4=[     # L4 = L2 o L1 = id
+    X[0].append(i+1)
+    j=A[1][i]
+    X[1].append(B[1][j-1])
+print(X)
+# Y = B o A = id
+Y=[
     [],
     []
 ]
 for i in range(n):
-    L4[0].append(i+1)
-    j=L2[1][i]
-    L4[1].append(L1[1][j-1])
-print(L4)
+    Y[0].append(i+1)
+    j=B[1][i]
+    Y[1].append(A[1][j-1])
+print(Y)
