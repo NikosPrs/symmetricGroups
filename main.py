@@ -19,8 +19,18 @@ L3=[
     [],
     []
 ]
+
 for i in range(1,n+1):
     L3[0].append(i)
-    L3[1].append(L2[1][L1[1][i-1]-1])
+    j=L1[1][i-1]-1
+    L3[1].append(L2[1][j])
 print (L3)
-
+L4=[         
+    [],
+    []
+]
+for i in range(1,n+1):
+    L4[0].append(i)
+    j=L2[1][i-1]-1
+    L4[1].append(L1[1][j])
+print (L4)
